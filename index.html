@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Bootstrap</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- Css Customized -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="logo-header">
+                <h3>Mini ERP</h3>
+                <img src="img/logo.png" alt="Logo Mini ERP">
+            </div>
+
+            <div class="menu-header">
+                <img src="img/lupa.png" alt="Procurar">
+                <img src="img/config.png" alt="Configurações">
+                <img src="img/envelope.png" alt="Mensagens">
+                <img src="img/sino.png" alt="Alertas">
+                <img src="img/logout.png" alt="Logout">
+            </div>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <div class="menu">
+            <div class="imagem-menu">
+                <div class="hero-text">
+                    Administrador<br>
+                    admin@admin.net
+                </div>
+            </div>
+            <div class="titulo-menu">
+                <h3>Menu</h3>
+            </div>
+
+            <div class="accordion" id="accordion-menu">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="estoque">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEstoque" aria-expanded="true" aria-controls="collapseEstoque">
+                            <div class="img-collapse">
+                                <img src="img/estoque.png" class="btn-img-menu" alt="estoque">
+                            </div>
+                            <div>
+                                Estoque
+                            </div>
+
+                        </button>
+                    </h2>
+                    <div id="collapseEstoque" class="accordion-collapse collapse" aria-labelledby="estoque"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Cadastro de Estoque</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="cadastro-basico">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCadastroBasico" aria-expanded="false"
+                            aria-controls="collapseCadastroBasico">
+                            <div class="img-collapse">
+                                <img src="img/cadastro.png" class="btn-img-menu" alt="cadastro básico">
+                            </div>
+                            <div>Cadastros básicos</div>
+                        </button>
+                    </h2>
+                    <div id="collapseCadastroBasico" class="accordion-collapse collapse show"
+                        aria-labelledby="cadastro-basico" data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Cadastros diversos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="operacoes">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOperacoes" aria-expanded="false" aria-controls="collapseOperacoes">
+                            <div class="img-collapse">
+                                <img src="img/operacoes.png" class="btn-img-menu" alt="operações">
+                            </div>
+                            <div>
+                                Operações
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOperacoes" class="accordion-collapse collapse" aria-labelledby="operacoes"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Cadastro de Operações</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="financeiro">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFinanceiro" aria-expanded="false"
+                            aria-controls="collapseFinanceiro">
+                            <div class="img-collapse">
+                                <img src="img/financeiro.png" class="btn-img-menu" alt="financeiro">
+                            </div>
+                            <div> Financeiro</div>
+                        </button>
+                    </h2>
+                    <div id="collapseFinanceiro" class="accordion-collapse collapse" aria-labelledby="financeiro"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Cadastro Financeiro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="etiquetas">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEtiquetas" aria-expanded="false" aria-controls="collapseEtiquetas">
+                            <div class="img-collapse">
+                                <img src="img/etiquetas.png" class="btn-img-menu" alt="etiquetas">
+                            </div>
+                            <div> Etiquetas</div>
+                        </button>
+                    </h2>
+                    <div id="collapseEtiquetas" class="accordion-collapse collapse" aria-labelledby="etiquetas"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Cadastro Etiquetas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="relatorios">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseRelatorios" aria-expanded="false"
+                            aria-controls="collapseRelatorios">
+                            <div class="img-collapse">
+                                <img src="img/relatorio.png" class="btn-img-menu" alt="relatórios">
+                            </div>
+                            <div> Relatórios</div>
+                        </button>
+                    </h2>
+                    <div id="collapseRelatorios" class="accordion-collapse collapse" aria-labelledby="relatorios"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Relatórios do Sistema</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="graficos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseGraficos" aria-expanded="false" aria-controls="collapseGraficos">
+                            <div class="img-collapse">
+                                <img src="img/graficos.png" class="btn-img-menu" alt="gráficos">
+                            </div>
+                            <div>
+                                Gráficos
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseGraficos" class="accordion-collapse collapse" aria-labelledby="graficos"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Dashboards</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="crm">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCRM" aria-expanded="false" aria-controls="collapseCRM">
+                            <div class="img-collapse">
+                                <img src="img/crm.png" class="btn-img-menu" alt="crm">
+                            </div>
+                            <div> CRM</div>
+                        </button>
+                    </h2>
+                    <div id="collapseCRM" class="accordion-collapse collapse" aria-labelledby="crm"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">CRM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="administracao">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseAdministracao" aria-expanded="false"
+                            aria-controls="collapseAdministracao">
+                            <div class="img-collapse">
+                                <img src="img/administrativo.png" class="btn-img-menu" alt="administração">
+                            </div>
+                            <div> Administração</div>
+                        </button>
+                    </h2>
+                    <div id="collapseAdministracao" class="accordion-collapse collapse" aria-labelledby="administracao"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Administrativo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="documentos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseDocumentos" aria-expanded="false"
+                            aria-controls="collapseDocumentos">
+                            <div class="img-collapse">
+                                <img src="img/documentos.png" class="btn-img-menu" alt="documentos">
+                            </div>
+                            <div> Documentos</div>
+                        </button>
+                    </h2>
+                    <div id="collapseDocumentos" class="accordion-collapse collapse" aria-labelledby="documentos"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Documentos diversos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="logs">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLogs" aria-expanded="false" aria-controls="collapseLogs">
+                            <div class="img-collapse">
+                                <img src="img/logs.png" class="btn-img-menu" alt="logs">
+                            </div>
+                            <div> Logs</div>
+                        </button>
+                    </h2>
+                    <div id="collapseLogs" class="accordion-collapse collapse" aria-labelledby="logs"
+                        data-bs-parent="#accordion-menu">
+                        <div class="accordion-body">
+                            <a href="#" class="link-menu">Logs do Sistema</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <div class="header-form">
+                CADASTRO DE VENDA
+            </div>
+
+            <div class="container-form">
+                <form action="" class="was-validated">
+                    <div class="container-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-titulo">
+                                        <h2>Informações do cliente</h2>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="cliente" class="form-label label-important ">Cliente</label>
+                                    <input type="text" name="cliente" id="cliente" class="form-control" required placeholder="Informe o nome do cliente">
+                                    <div class="invalid-feedback">Por favor, preencha o campo nome!</div>
+                                </div>
+                                <div class="col-4">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="telefone" class="form-label label-destaque">Telefone</label>
+                                    <input type="tel" name="telefone" id="telefone" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-titulo">
+                                        <h2>Informações gerais</h2>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="id" class="form-label">Id</label>
+                                    <input type="number" name="id" id="id" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <label for="datavenda" class="form-label">Data da venda</label>
+                                    <input type="date" name="datavenda" id="datavenda" class="form-control">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="vendedor" class="form-label label-destaque label-important ">Vendedor</label>
+                                    <input type="text" name="vendedor" id="vendedor" class="form-control" required placeholder="Informe o nome do vendedor">
+                                    <div class="invalid-feedback">Por favor, preencha o campo vendedor!</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="fornecedor" class="form-label label-destaque">Fornecedor</label>
+                                    <input type="text" name="fornecedor" id="fornecedor" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <label for="valorfrete" class="form-label">Valor do frete</label>
+                                    <input type="number" name="valorfrete" id="valorfrete" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <label for="observacoes" class="form-label">Observações</label>
+                                    <textarea name="observacoes" id="observacoes"
+                                        class="form-control text-area-style"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-titulo">
+                                        <h2>Produtos</h2>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="tipoProduto" class="form-label label-important ">Tipo do Produto</label>
+                                    <input type="text" name="tipoProduto" id="tipoProduto" class="form-control" required>
+                                    <div class="invalid-feedback">Por favor, preencha o campo tipo do produto!</div>
+                                </div>
+                                <div class="col-4">
+                                    <label for="produto" class="form-label label-important ">Produto</label>
+                                    <input type="text" name="produto" id="produto" class="form-control" required>
+                                    <div class="invalid-feedback">Por favor, preencha o campo produto!</div>
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="valor" class="form-label label-destaque label-important ">Valor</label>
+                                    <input type="number" name="valor" id="valor" class="form-control" required>
+                                    <div class="invalid-feedback">Por favor, preencha o campo valor!</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="quantidade" class="form-label label-important ">Quantidade</label>
+                                    <input type="number" name="quantidade" id="quantidade" class="form-control" required>
+                                    <div class="invalid-feedback">Por favor, preencha o campo quantidade!</div>
+                                </div>
+                                <div class="col-4">
+                                    <label for="desconto" class="form-label">Desconto</label>
+                                    <input type="number" name="desconto" id="desconto" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-3">
+                                    <button class="btn btn-outline-primary btn-lg"><i class="fa fa-plus"></i> Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th>Produto</th>
+                                                <th>Quantidade</th>
+                                                <th>Valor</th>
+                                                <th>Desconto</th>
+                                                <th>Valor Total</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn"><i class="fa fa-pencil"></i></button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn"><i class="fa fa-trash"></i></button>
+                                                </td>
+                                                <td>Notebook Pro</td>
+                                                <td>R$ 1,00</td>
+                                                <td>R$ 15.000,00</td>
+                                                <td>R$ 0,00</td>
+                                                <td>R$ 15.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn"><i class="fa fa-pencil"></i></button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn"><i class="fa fa-trash"></i></button>
+                                                </td>
+                                                <td>Notebook Air</td>
+                                                <td>R$ 1,00</td>
+                                                <td>R$ 8.000,00</td>
+                                                <td>R$ 0,00</td>
+                                                <td>R$ 8.000,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="container-block">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6 display-flex">
+                                    <div class="bar-buttons">
+                                        <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-save"></i>
+                                            Salvar</button>
+                                    </div>
+                                    <div class="bar-buttons">
+                                        <button class="btn btn-light btn-lg"><i class="fa fa-plus"></i> Novo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="container-block">
+                    <div class="container-fluid">
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div>
+            2023 Desenvolvido por: Henrique F. Paes
+        </div>
+    </footer>
+
+    <!-- CDN JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- JS Customized -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
