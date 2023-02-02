@@ -274,7 +274,8 @@
                             <div class="row">
                                 <div class="col-4">
                                     <label for="cliente" class="form-label label-important ">Cliente</label>
-                                    <input type="text" name="cliente" id="cliente" class="form-control" required placeholder="Informe o nome do cliente">
+                                    <input type="text" name="cliente" id="cliente" class="form-control" required
+                                        placeholder="Informe o nome do cliente">
                                     <div class="invalid-feedback">Por favor, preencha o campo nome!</div>
                                 </div>
                                 <div class="col-4">
@@ -314,8 +315,12 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <label for="vendedor" class="form-label label-destaque label-important ">Vendedor</label>
-                                    <input type="text" name="vendedor" id="vendedor" class="form-control" required placeholder="Informe o nome do vendedor">
+                                    <label for="vendedor"
+                                        class="form-label label-destaque label-important ">Vendedor</label>
+                                    <select id="vendedor" name="vendedor" class="form-select" required>
+                                        <option selected>Selecione...</option>
+                                        <option>...</option>
+                                    </select>
                                     <div class="invalid-feedback">Por favor, preencha o campo vendedor!</div>
                                 </div>
                             </div>
@@ -353,12 +358,18 @@
                             <div class="row">
                                 <div class="col-4">
                                     <label for="tipoProduto" class="form-label label-important ">Tipo do Produto</label>
-                                    <input type="text" name="tipoProduto" id="tipoProduto" class="form-control" required>
+                                    <select id="tipoProduto" name="tipoProduto" class="form-select" required>
+                                        <option selected>Selecione o tipo do produto...</option>
+                                        <option>...</option>
+                                    </select>
                                     <div class="invalid-feedback">Por favor, preencha o campo tipo do produto!</div>
                                 </div>
                                 <div class="col-4">
                                     <label for="produto" class="form-label label-important ">Produto</label>
-                                    <input type="text" name="produto" id="produto" class="form-control" required>
+                                    <select id="produto" name="produto" class="form-select" required>
+                                        <option selected>Selecione o produto...</option>
+                                        <option>...</option>
+                                    </select>
                                     <div class="invalid-feedback">Por favor, preencha o campo produto!</div>
                                 </div>
 
@@ -372,7 +383,8 @@
                             <div class="row">
                                 <div class="col-4">
                                     <label for="quantidade" class="form-label label-important ">Quantidade</label>
-                                    <input type="number" name="quantidade" id="quantidade" class="form-control" required>
+                                    <input type="number" name="quantidade" id="quantidade" class="form-control"
+                                        required>
                                     <div class="invalid-feedback">Por favor, preencha o campo quantidade!</div>
                                 </div>
                                 <div class="col-4">
@@ -387,7 +399,8 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-3">
-                                    <button class="btn btn-outline-primary btn-lg"><i class="fa fa-plus"></i> Adicionar</button>
+                                    <button class="btn btn-outline-primary btn-lg"><i class="fa fa-plus"></i>
+                                        Adicionar</button>
                                 </div>
                             </div>
                         </div>
